@@ -41,5 +41,5 @@ reportWebVitals();
 
 Within the .Render() method I added some HTML to display content to the DOM.
 
-
-
+## Using Inline and Internal Styling
+Styling in React is simple and only differs slightly from the syntax used in HTML.

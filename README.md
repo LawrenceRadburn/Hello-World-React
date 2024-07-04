@@ -39,7 +39,7 @@ reportWebVitals();
 
 ## Working Within the .Render() Method
 
-Within the .Render() method I added the following HTML to display content to the DOM, <h1>Hello World</h1>.
+Within the .Render() method I added some HTML to display content to the DOM.
 
 
 

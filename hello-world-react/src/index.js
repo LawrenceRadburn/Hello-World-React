@@ -8,6 +8,9 @@ const blueHeader = {
     color: 'blue'
 };
 const exampleExpression = 'This is an example expression.';
+const firstExpression = 'React';
+const secondExpression = 'is';
+const thirdExpression = 'fun';
 
 root.render(
     <div>
@@ -30,4 +33,19 @@ root.render(
             For instance, the following text will call a variable and return its value using an expression.
         </p>
         <p><strong>{exampleExpression}</strong></p>
+        <br></br>
+        <h2>Concatenating Expressions in React</h2>
+        <p>To concatenate two or more expressions in React, we use the + operator. In the following example, we'll concatenate three variables to produce a sentence.</p>
+        <p><strong>{firstExpression + secondExpression + thirdExpression}</strong></p>
+        <br></br>
+        <h2>Template Literals in React</h2>
+        <p>You may have noticed the setence above successfully concatenated the three variable but there was no spacing between the variables.
+            We can use template literals to create a string and insert the variables in place of the word, or variable's value. This will
+            help avoid having to manually input a space inside the value of our variable or add concatenation operators with empty strings between each word.
+            Basically, template literals can help reduce the amount of code we have to write.
+        </p>
+        <p>The template literal begins by being wrapped in backticks. Then, to insert the variable, we wrap the variable inside an expression using curly
+            braces preceded with a dollar sign. Here is an example:
+        </p>
+        <p>{`I think that ${firstExpression} ${secondExpression} very ${thirdExpression}`}</p>
     </div>);

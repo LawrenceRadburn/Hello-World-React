@@ -1,6 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
+import ExampleComponent from './example';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -47,5 +48,27 @@ root.render(
         <p>The template literal begins by being wrapped in backticks. Then, to insert the variable, we wrap the variable inside an expression using curly
             braces preceded with a dollar sign. Here is an example:
         </p>
-        <p>{`I think that ${firstExpression} ${secondExpression} very ${thirdExpression}`}</p>
+        <p><strong>{`I think that ${firstExpression} ${secondExpression} very ${thirdExpression}.`}</strong></p>
+        <br></br>
+        <h2>Components in React</h2>
+        <p>To create a component in React, you should first create a separate file with React's .jsx file extension.
+            We created a file called example.jsx in our src file.
+        </p>
+        <p>Make sure you import the React library using the import declation as follows: </p>
+        <p>import React from 'react';</p>
+        <p>To create a component in React, simply create a function. When finished, use the export declaration so the file can be imported in another file.</p>
+        <p>Now, in this file we used import ExampleComponent from './example';</p>
+        <p>Be sure to capitalize the first letter when naming your components or else React will treat them as DOM tags. Additionally, when importing
+            and exporting the Components, the first letter must be capitialized as well.
+        </p>
+        <p>React knows the file extension so we don't have to include it.</p>
+        <p>When placing the function with React, is has to be wrapped in opening and closing tags.</p>
+        <p>Finally, we can insert the function wherever we like. Here is the function below:</p>
+        <p><ExampleComponent /></p>
+        <p>Components in React can be used multiple times. This saves developers time when we want to reuse code.
+            Here is an example where we can reuse the same component several times in a row.
+        </p>
+        <p><ExampleComponent /></p>
+        <p><ExampleComponent /></p>
+        <p><ExampleComponent /></p>
     </div>);

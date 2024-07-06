@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import ExampleComponent from './example';
+import {ExampleComponent, ExampleProp} from './example';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -71,4 +71,7 @@ root.render(
         <p><ExampleComponent /></p>
         <p><ExampleComponent /></p>
         <p><ExampleComponent /></p>
+        <br></br>
+        <h2>Props in React</h2>
+        <p><ExampleProp name="Lawrence" /></p>
     </div>);

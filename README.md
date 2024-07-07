@@ -58,3 +58,6 @@ When making new files with the intention of using the React.js library we first 
 Components are reusable blocks of code. To make a component, we first should create a new .jsx file and import React.
 Using a function with syntax similar to JavaScript we can create our component and export the component.
 This allows us to import the function, or component in another file and reuse the code as needed.
+
+## Props in React
+We can insert arguments inside our components and attribute the property values expression to dynamically add content.
